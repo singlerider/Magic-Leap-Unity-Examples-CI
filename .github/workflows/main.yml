@@ -27,7 +27,7 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          customImage: 'noenflux/editor:2022.2.0b8-windows-il2cpp-1.0.1'
+          customImage: 'noenflux/editor:2022.2.0b8-android-1.0.0'
           targetPlatform: ${{ matrix.targetPlatform }}
       - uses: actions/upload-artifact@v2
         with:
