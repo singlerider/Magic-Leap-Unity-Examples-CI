@@ -29,6 +29,7 @@ jobs:
         with:
           customImage: 'noenflux/editor:2022.2.0b8-android-1.0.0'
           targetPlatform: ${{ matrix.targetPlatform }}
+          versioning: Semantic
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
